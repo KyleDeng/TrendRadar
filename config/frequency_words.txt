@@ -1,57 +1,48 @@
+中国
+社会
+人
+@5
+
+国际
+局势
+@5
+
+AI大模型
 DeepSeek
-梁文锋
+OpenAI
+Anthropic
+DeepMind
+Grok
+Llama
+Qwen
 
+手机
+苹果
+三星
+小米
 华为
-鸿蒙
-HarmonyOS
-任正非
+oppo
+vivo
++发布
 
-比亚迪
-王传福
 
-大疆
-DJI
-
-宇树
-王兴兴
-
-智元
-灵犀
-稚晖君
-彭志辉
-
-字节
-bytedance
-张一鸣
-
+科技硬件巨头
 特斯拉
-马斯克
-
-微软
-Microsoft
-
 英伟达
 NVIDIA
-黄仁勋
+大疆
+宇树
+智元
+马斯克
 
-AMD
 
+科技软件巨头
+微软
+Microsoft
+字节
+bytedance
 谷歌
 google
-gemini
-deepmind
-
-chatgpt
-openai
-sora
-
-claude
-Anthropic
-
-iphone
-ipad
-mac
-ios
 
 ai
 !gai
@@ -63,23 +54,35 @@ LLM
 Vibe-Coding
 VScode
 Cline
+Kiro
 
 ai-coding
 Claude
 Cursor
 Antigravity
-Kiro
+GPT
 
 国产coding
 Trae
 Qoder
+Qwen
 CodeBuddy
+
+中国AI
+智谱
+Kimi
+元宝
+纳米
+文心
+通义
 
 自动驾驶
 特斯拉
 华为
 小鹏
 小米
+理想
+蔚来
 +车
 
 智能硬件
@@ -87,10 +90,6 @@ CodeBuddy
 多模态
 机器人
 tuya
-
-国产
-中国
-@5
 
 科技
 创意
