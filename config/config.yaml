@@ -119,5 +119,7 @@ platforms:
     name: "少数派"
   - id: "v2ex"
     name: "V2EX"
+  - id: "csdn"
+    name: "CSDN"
   - id: "oshwhub"
     name: "开源广场"
