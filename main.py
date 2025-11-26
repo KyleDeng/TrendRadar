@@ -14,6 +14,9 @@ from email.header import Header
 from email.utils import formataddr, formatdate, make_msgid
 from extern_platform.csdn import fetch_csdn_data
 from extern_platform.oshwhub import fetch_oshwhub_data
+from extern_platform.opengithub import fetch_opengithub_data
+from extern_platform.qbitai import fetch_qbitai_data
+from extern_platform.infoq import fetch_infoq_data
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Union
@@ -75,6 +78,7 @@ def load_config():
     config = {
         "VERSION_CHECK_URL": config_data["app"]["version_check_url"],
         "SHOW_VERSION_UPDATE": config_data["app"]["show_version_update"],
+        "AUTO_OPEN_BROWSER": config_data["app"].get("auto_open_browser", True),
         "REQUEST_INTERVAL": config_data["crawler"]["request_interval"],
         "REPORT_MODE": os.environ.get("REPORT_MODE", "").strip()
         or config_data["report"]["mode"],
@@ -486,6 +490,15 @@ class DataFetcher:
             
         if id_value == "oshwhub":
             return fetch_oshwhub_data(id_value, alias)
+            
+        if id_value == "opengithub":
+            return fetch_opengithub_data(id_value, alias)
+            
+        if id_value == "qbitai":
+            return fetch_qbitai_data(id_value, alias)
+            
+        if id_value == "infoq":
+            return fetch_infoq_data(id_value, alias)
 
         url = f"https://newsnow.busiyi.world/api/s?id={id_value}&latest"
 
@@ -4338,7 +4351,11 @@ class NewsAnalyzer:
 
     def _should_open_browser(self) -> bool:
         """判断是否应该打开浏览器"""
-        return not self.is_github_actions and not self.is_docker_container
+        return (
+            CONFIG.get("AUTO_OPEN_BROWSER", True)
+            and not self.is_github_actions
+            and not self.is_docker_container
+        )
 
     def _setup_proxy(self) -> None:
         """设置代理配置"""

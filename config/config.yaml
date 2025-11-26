@@ -1,6 +1,7 @@
 app:
   version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
   show_version_update: true # 控制显示版本更新提示，如果 false，则不接受新版本提示
+  auto_open_browser: false # 控制是否自动打开浏览器，false 时不自动打开报告
 
 crawler:
   request_interval: 1000 # 请求间隔(毫秒)
@@ -31,7 +32,7 @@ report:
   max_news_per_keyword: 0 # 每个关键词最大显示数量，0=不限制
 
 notification:
-  enable_notification: true # 是否启用通知功能，如果 false，则不发送手机通知
+  enable_notification: false # 是否启用通知功能，如果 false，则不发送手机通知
   message_batch_size: 4000 # 消息分批大小（字节）(这个配置别动)
   dingtalk_batch_size: 20000 # 钉钉消息分批大小（字节）(这个配置也别动)
   feishu_batch_size: 29000 # 飞书消息分批大小（字节）
@@ -119,7 +120,14 @@ platforms:
     name: "少数派"
   - id: "v2ex"
     name: "V2EX"
+# 以下内容为自定义信息源
   - id: "csdn"
     name: "CSDN"
   - id: "oshwhub"
-    name: "开源广场"
+    name: "立创开源"
+  - id: "opengithub"
+    name: "OpenGithub"
+  - id: "qbitai"
+    name: "量子位"
+  - id: "infoq"
+    name: "InfoQ"
