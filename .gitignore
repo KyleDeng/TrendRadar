@@ -40,5 +40,5 @@ htmlcov/                 # 覆盖率报告目录
 output/**/html/
 # output/           # 如果不使用 incremental，取消注释这行完全忽略 output
 
-index.html          # 忽略根目录的 index.html
+# index.html          # 忽略根目录的 index.html
 uv.lock
